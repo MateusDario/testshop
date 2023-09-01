@@ -1,12 +1,12 @@
 const produtos = [
     { nome: "Produto 1", descricao: "Descrição do produto 1. Preço: R$XX,XX", imagem: "imagem_produto1.jpg" },
     { nome: "Produto 2", descricao: "Descrição do produto 2. Preço: R$XX,XX", imagem: "imagem_produto2.jpg" },
-    { nome: "Produto 2", descricao: "Descrição do produto 2. Preço: R$XX,XX", imagem: "imagem_produto2.jpg" },
-    { nome: "Produto 2", descricao: "Descrição do produto 2. Preço: R$XX,XX", imagem: "imagem_produto2.jpg" },
-    { nome: "Produto 2", descricao: "Descrição do produto 2. Preço: R$XX,XX", imagem: "imagem_produto2.jpg" }
+    { nome: "Produto 3", descricao: "Descrição do produto 2. Preço: R$XX,XX", imagem: "imagem_produto2.jpg" },
+    { nome: "Produto 4", descricao: "Descrição do produto 2. Preço: R$XX,XX", imagem: "imagem_produto2.jpg" },
+    { nome: "Produto 5", descricao: "Descrição do produto 2. Preço: R$XX,XX", imagem: "imagem_produto2.jpg" }
 ];
 
-// Função para exibir produtos na página
+//função para exibir produtos na página
 function exibirProdutos() {
     const produtosContainer = document.getElementById("produtos");
 
@@ -14,7 +14,7 @@ function exibirProdutos() {
         const produtoDiv = document.createElement("div");
         produtoDiv.classList.add("produto");
 
-        const imagem = document.createElement("img");
+        const imagem = document.createElement("img"); 
         imagem.src = produto.imagem;
         imagem.alt = produto.nome;
 
@@ -30,8 +30,8 @@ function exibirProdutos() {
         produtoDiv.appendChild(imagem);
         produtoDiv.appendChild(nome);
         produtoDiv.appendChild(descricao);
-        produtoDiv.appendChild(botao);
-
+        produtoDiv.appendChild(botao)
+        
         produtosContainer.appendChild(produtoDiv);
     });
 }
