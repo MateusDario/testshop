@@ -25,7 +25,7 @@ function exibirProdutos() {
         descricao.textContent = produto.descricao;
 
         const botao = document.createElement("button");
-        botao.textContent = "Adicionar ao Carrinho";
+        botao.textContent = "Pedir";
 
         produtoDiv.appendChild(imagem);
         produtoDiv.appendChild(nome);
